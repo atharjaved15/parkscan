@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'login.dart';
+
 class getStarted extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -60,7 +62,7 @@ class getStarted extends StatelessWidget {
                           width:  MediaQuery.of(context).size.width * 0.40,
                           child: MaterialButton(
                             onPressed: (){
-                              //Navigator.push(context, MaterialPageRoute(builder: (context) => loginScreen()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context) => login()));
                             },
                             child: Text('Login' , style: TextStyle(color: Colors.white),),
                           ),
