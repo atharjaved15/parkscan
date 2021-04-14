@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:parkscan/adminPanel.dart';
 
 class adminLogin extends StatelessWidget {
   TextEditingController userNameController, passController;
@@ -32,7 +33,7 @@ class adminLogin extends StatelessWidget {
                       elevation: 0,
                       minWidth: double.maxFinite,
                       height: 50,
-                      onPressed: () => {},
+                      onPressed: () => {Navigator.push(context, MaterialPageRoute(builder: (context) => adminPanel()))},
                       color: Colors.purple[900],
                       child: Text('Login',
                           style: TextStyle(color: Colors.white, fontSize: 16)),
